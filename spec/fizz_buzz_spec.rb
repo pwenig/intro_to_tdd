@@ -3,15 +3,17 @@ require 'rspec/core'
 require 'fizz_buzz'
 
 describe FizzBuzz do
-  it "returns an array from 1 to number passed in" do
-    fizzbuzz = FizzBuzz.new(5)
 
-    expected = [1, 2, 3, 4, 5]
+  it "replaces multiples of 3 with Fizz, multiples of 5 with Buzz, multiples of 15 with FizzBuzz" do
 
-    actual = fizzbuzz.arrayify
+fizzbuzz = FizzBuzz.new(15)
+
+expected = [ 1, 2, 'Fizz', 4, 'Buzz', 'Fizz', 7, 8, 'Fizz',
+            'Buzz', 11, 'Fizz', 13, 14, 'FizzBuzz']
+
+actual = fizzbuzz.arrayify
 
 
-    expect(actual).to eq expected
-
+expect(actual).to eq expected
   end
 end
