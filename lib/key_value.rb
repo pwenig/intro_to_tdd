@@ -1,4 +1,4 @@
-class KeyStore
+class Key_Value
   def initialize
     @store = Hash.new
 
@@ -13,6 +13,9 @@ end
     @store[key]
   end
 
+  def delete(key)
+    @store.delete(key)
+  end
 
   end
 
