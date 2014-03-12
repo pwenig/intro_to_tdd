@@ -1,4 +1,4 @@
-class Num_Calc
+class NumCalc
 
   def intialize
     @output = 0
