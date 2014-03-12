@@ -31,7 +31,14 @@ describe Num_Calc do
 
   end
 
-  it "create a clear method that clears the calculator's memory. When the memory is empty, get returns 0."
+  it "create a clear method that clears the calculator's memory. When the memory is empty, get returns 0." do
+    num_calc = Num_Calc.new
+    num_calc.save(200)
+    num_calc.clear
+    actual_value = num_calc.get
+    expected_value = 0
+    expect(actual_value).to eq expected_value
+  end
 
 
 end

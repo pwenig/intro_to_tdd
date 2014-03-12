@@ -24,7 +24,7 @@ class Num_Calc
     @output
   end
 
-  def clear(num)
+  def clear
     @output = 0
   end
 end
