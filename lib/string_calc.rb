@@ -1,13 +1,13 @@
-class String_Calc
+class StringCalc
+
 
   def initialize(delimiter)
     @delimiter = delimiter
   end
 
-
  def add(string)
    if string == ""
-     return 0
+     0
    else
      array = string.split(@delimiter)
      sum = 0

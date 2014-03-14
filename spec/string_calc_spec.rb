@@ -1,10 +1,10 @@
-require "String_Calc"
+require "string_calc"
 
-describe String_Calc do
+describe StringCalc do
 
-it "create a add method that returns 0 when empty string is passed" do
+it "returns 0 when empty string is passed" do
 
-  calc = String_Calc.new(",")
+  calc = StringCalc.new(",")
   expected_value = 0
   actual_value = calc.add("")
 
@@ -13,9 +13,9 @@ it "create a add method that returns 0 when empty string is passed" do
 
 end
 
-it "create a add method that returns the sum of the string" do
+it 'returns 10 of the string is "1,2,7"' do
 
-  calc = String_Calc.new(",")
+  calc = StringCalc.new(",")
   expected_value = 10
   actual_value = calc.add("1, 2, 7")
 
