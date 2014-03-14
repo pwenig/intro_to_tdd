@@ -1,13 +1,10 @@
-class AngryDog
+class Dog
 def initialize
   @times = 0
 end
 def poke
   @times += 1
-  if @times < 3
-    puts "growl"
-  else
-    puts "bark"
-  end
+  @times ==3 ? "bark" : "growl"
+
 end
 end
