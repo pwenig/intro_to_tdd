@@ -5,6 +5,11 @@ describe Logger do
     file = "Logger.txt"
     logger = Logger.new(file)
 
+  end
 
+  it "when method is called, it receives a string" do
+    file = "Logger.txt"
+    logger = Logger.new(file)
+    logger.log("I'm logging something")
   end
 end
