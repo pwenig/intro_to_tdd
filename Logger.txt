@@ -1,0 +1,5 @@
+2014-03-16 14:24:05 -0600 I'm logging something once
+2014-03-16 14:24:05 -0600 I'm logging something twice
+2014-03-16 14:24:05 -0600 I'm logging something three
+2014-03-16 14:24:05 -0600 I'm logging something four
+2014-03-16 14:24:05 -0600 I'm logging something five
