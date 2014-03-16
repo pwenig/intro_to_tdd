@@ -5,14 +5,17 @@ def initialize(filename)
   @count = 0
 end
 def log(message)
-  @message = message
-  @log_storage << @message
   @count += 1
+  @message = message
+  @log_storage << Time.now.to_s + " " + @message
+
   if @count == 5
-    @log_storage.join("\n")
+    @file = File.new(@filename, "a")
     @file.write(@log_storage.join("\n"))
     @file.write("\n")
     @file.close
+    @count = 0
+    @log_storage = []
   end
 
 end
